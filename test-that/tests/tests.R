@@ -2,7 +2,7 @@
 source("../functions/functions.R")
 
 # context with one test that groups expectations
-context("Test for range value") 
+context("Test for range value and missing values") 
 
 test_that("range works as expected", {
   x <- c(1, 2, 3, 4, 5)
