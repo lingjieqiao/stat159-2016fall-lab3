@@ -17,8 +17,11 @@ test_that("range value for numeric vectors", {
 test_that("range value for numeric vectors with NAs", {
   y <- c(1, 2, 3, 4, NA)
   
-  expect_equal(range_value(y), NA_real_)
-  expect_length(range_value(y), 1)
+  expect_equal(range_value(y, FALSE), NA_real_)
+  expect_equal(range_value(y, TRUE), 3)
+  expect_length(range_value(y, FALSE), 1)
+  expect_length(range_value(y, TRUE), 1)
+  expect_type(range_value(y), 'double')
 })
 
 
