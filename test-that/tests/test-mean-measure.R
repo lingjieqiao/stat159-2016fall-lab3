@@ -1,4 +1,4 @@
-source("../functions/add.R")
+source("../functions/mean-measure.R")
 
 context("Measure center value - mean")
 
