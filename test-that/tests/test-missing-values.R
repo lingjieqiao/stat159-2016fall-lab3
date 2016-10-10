@@ -21,9 +21,9 @@ test_that("missing value", {
   expect_length(missing_values(z), 1)
   expect_equal(missing_values(nas), 10)
   
-  # More tests regarding vector type as 'double'
-  expect_type(missing_values(x), 'double')
-  expect_type(missing_values(y), 'double')
-  expect_type(missing_values(z), 'double')
-  expect_type(missing_values(nas), 'double')
+  # More tests regarding vector type as 'integer' as the expected outcome is integer, not double
+  expect_type(missing_values(x), 'integer')
+  expect_type(missing_values(y), 'integer')
+  expect_type(missing_values(z), 'integer')
+  expect_type(missing_values(nas), 'integer')
 })
